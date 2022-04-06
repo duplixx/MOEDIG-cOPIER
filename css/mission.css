@@ -1,0 +1,21 @@
+.mission{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding:100px;
+}
+.para{
+    content:wrap;
+    margin: 20px;
+    width:700px ;
+    animation-duration: 5s;
+    animation: normal;
+
+}
+.para h1{
+    text-decoration: underline;
+    text-decoration-color: coral;
+    margin-bottom: 50px;
+}
