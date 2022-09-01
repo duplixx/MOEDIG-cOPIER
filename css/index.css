@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,800&family=Poppins:ital,wght@0,400;0,600;1,500&display=swap'); */
 /* palateno
 helvetica neue */
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Playfair+Display:ital,wght@1,400;1,500;1,600;1,800&family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'IBM Plex Serif', serif;
   text-shadow: 0 0 2px #000;
 }
 html,
@@ -21,16 +21,19 @@ body {
 } */
 .sec1{
       
-  background-image: url("https://mocah.org/thumbs/121616-mountains-landscape-purple-gradient-horizon-minimal-hd-4k.png");
+  background-image: url("https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80");
   height: 750px;
   object-fit:cover;
   z-index: -1;
   background-repeat:no-repeat;
   background-size: 100% 100%;
+  
+/* font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif; */
 }   
 
 .nav {
-  color: white;
+  color: solid rgb(255, 255, 255);
   display: grid;
   font-size: larger;
   grid-template-columns: auto auto;
@@ -44,16 +47,19 @@ body {
 .menu {
   display: flex;
   justify-content:space-between;
-  padding: 40px
+  padding: 40px;
+  
 }
 .menu-ul {
   display: flex;
   flex-direction: row;
   list-style: none;
+  
 }
 
 li {
   padding: 10px;
+  color:solid  rgb(255, 255, 255);
 }
 
 .cont2 {
@@ -103,4 +109,93 @@ li {
   transition: border-bottom .3s ease;
 
 
+}
+/* Cards  */
+
+
+.card_sec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.profile-card-2 {
+  max-width: 400px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  /* background-position: center; */
+  overflow: hidden;
+  position: relative;
+  margin: 10px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.profile-card-2 img {
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-name {
+  position: absolute;
+  left: 30px;
+  bottom: 70px;
+  font-size: 30px;
+  color: #FFF;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: #FFF;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-username {
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  color: #FFF;
+  font-size: 13px;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons .fa {
+  margin: 5px;
+}
+
+.profile-card-2:hover img {
+  filter: grayscale(100%);
+}
+
+.profile-card-2:hover .profile-name {
+  bottom: 80px;
+}
+
+.profile-card-2:hover .profile-username {
+  bottom: 60px;
+}
+
+.profile-card-2:hover .profile-icons {
+  right: 40px;
+}
+.btn-1 :hover{
+  color: rgb(0, 0, 0); 
+
+}
+.arrow :hover {
+  filter: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .card_sec {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .menu-ul{
+    display: none;
+  }
 }
